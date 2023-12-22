@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ACTIVITY.welcomeactivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:src="@drawable/welcome_anh" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#308F34"
+        android:text=" '' Welcome to the travel ticket booking app '' "
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/LLnext"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="300dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="next"
+            android:textSize="25dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_arrow_right_alt_24"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</LinearLayout>

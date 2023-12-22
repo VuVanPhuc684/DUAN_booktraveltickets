@@ -1,8 +1,10 @@
-package vanphuc.booktraveltickets;
+package vanphuc.booktraveltickets.ACTIVITY;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import vanphuc.booktraveltickets.R;
 
 public
 class MainActivity extends AppCompatActivity {
