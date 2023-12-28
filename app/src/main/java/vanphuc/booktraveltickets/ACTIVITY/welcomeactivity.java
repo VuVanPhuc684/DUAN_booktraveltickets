@@ -21,7 +21,7 @@ public class welcomeactivity extends AppCompatActivity {
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(welcomeactivity.this, MainActivity.class);
+                Intent intent = new Intent(welcomeactivity.this, dangnhapactivity.class);
                 startActivity(intent);
             }
         });

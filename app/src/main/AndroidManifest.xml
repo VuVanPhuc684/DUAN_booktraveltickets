@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Booktraveltickets"
         tools:targetApi="31">
         <activity
+            android:name=".ACTIVITY.dangkyactivity"
+            android:exported="false" />
+        <activity
+            android:name=".ACTIVITY.dangnhapactivity"
+            android:exported="false" />
+        <activity
             android:name=".ACTIVITY.MainActivity"
             android:exported="false" />
         <activity

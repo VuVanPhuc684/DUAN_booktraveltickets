@@ -19,13 +19,12 @@ public class DbHelper extends SQLiteOpenHelper {
         // Tạo bảng Users
         String createUsersTable = "CREATE TABLE Users (" +
                 "user_id INTEGER PRIMARY KEY," +
+                "phone TEXT," +
                 "name TEXT," +
-                "email TEXT UNIQUE," +
-                "password TEXT," +
-                "phone TEXT" +
+                "password TEXT" +
                 ")";
         sqLiteDatabase.execSQL(createUsersTable);
-        sqLiteDatabase.execSQL ("insert into Users values (1,'admin','admin@gmail.com','admin','0981139895')");
+        sqLiteDatabase.execSQL ("insert into Users values (1,'0981139895','admin','admin')");
 
 
 
