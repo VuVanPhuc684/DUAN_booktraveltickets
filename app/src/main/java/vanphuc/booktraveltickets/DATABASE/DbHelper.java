@@ -10,7 +10,7 @@ public class DbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "travel_tickets.db";
     private static final int DATABASE_VERSION = 1;
 
-    public DbHelper(@Nullable Context context) {
+    public DbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
@@ -25,9 +25,6 @@ public class DbHelper extends SQLiteOpenHelper {
                 ")";
         sqLiteDatabase.execSQL(createUsersTable);
         sqLiteDatabase.execSQL ("insert into Users values (1,'0981139895','admin','admin')");
-
-
-
 
         // Tạo bảng Trips
         String createTripsTable = "CREATE TABLE Trips (" +

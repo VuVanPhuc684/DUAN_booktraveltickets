@@ -1,39 +1,50 @@
 package vanphuc.booktraveltickets.MODEL;
 
-public
-class User {
-    private int user_id;
+public class User {
+    private int userId;
     private String phone;
     private String name;
     private String password;
 
-    public
-    User(int user_id, String phone, String name, String password) {
-        this.user_id = user_id;
+    public User() {
+    }
+
+    public User(int userId, String phone, String name, String password) {
+        this.userId = userId;
         this.phone = phone;
         this.name = name;
         this.password = password;
     }
 
-    // Getters and setters
-
-    public
-    int getUserId() {
-        return user_id;
+    public int getUserId() {
+        return userId;
     }
 
-    public
-    String getPhone() {
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public String getPhone() {
         return phone;
     }
 
-    public
-    String getName() {
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getName() {
         return name;
     }
 
-    public
-    String getPassword() {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
         return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

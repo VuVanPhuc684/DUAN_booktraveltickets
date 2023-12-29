@@ -1,6 +1,7 @@
 package vanphuc.booktraveltickets.DAO;
 
 import android.annotation.SuppressLint;
+import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
@@ -12,6 +13,16 @@ class UserDao {
 
     public UserDao(SQLiteDatabase database) {
         this.database = database;
+    }
+
+    public boolean register(User user) {
+        ContentValues values = new ContentValues ();
+        values.put("phone", user.getPhone());
+        values.put("name", user.getName());
+        values.put("password", user.getPassword());
+
+        long result = database.insert("Users", null, values);
+        return result != -1;
     }
 
     public

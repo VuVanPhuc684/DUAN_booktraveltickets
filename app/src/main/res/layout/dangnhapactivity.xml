@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/ETmatkhaudangnhap"
-        android:hint="tên đăng nhập  : "
+        android:hint="mật khẩu đăng nhập  : "
         android:background="@drawable/khungedittext"
         android:layout_margin="20dp"
         android:padding="15dp"
